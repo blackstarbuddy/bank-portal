@@ -139,7 +139,7 @@ def signup():
        
     conn = smtplib.SMTP("smtp.gmail.com" , 587)
     conn.starttls()
-    gmail = "2018pcecsmohit92@poornima.org"
+    gmail = input("enter your gmail id")
     pas = getpass.getpass()
     conn.login(gmail,pas)
     conn.sendmail(gmail , email, f"SUBJECT:OTP \n\n\n\nYOUR OTP IS: {o}")
